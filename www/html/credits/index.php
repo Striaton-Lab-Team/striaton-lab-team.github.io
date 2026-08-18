@@ -40,6 +40,22 @@
 
                     Translators:
                     <ul>
+                        Japanese:
+                        <ul>
+                            <li>Petrosjd</li>
+                        </ul>
+                        French:
+                        <ul>
+                            <li>Lugiadrien</li>
+                        </ul>
+                        German:
+                        <ul>
+                            <li>Ayumea</li>
+                        </ul>
+                        Spanish Spain:
+                        <ul>
+                            <li>Yuraite</li>
+                        </ul>
                         Italian:
                         <ul>
                             <li>D 'Lagger' Garlini</li>
@@ -49,7 +65,7 @@
                         <ul>
                             <li>Christóbal</li>
                         </ul>
-                        Portuguese Brazillian:
+                        Portuguese Brazilian:
                         <ul>
                             <li>Hyd</li>
                         </ul>
