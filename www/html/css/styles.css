@@ -100,7 +100,7 @@ ul {
     /* this is only for a background image! */
     /* if you want to put images IN the header, 
        you can add them directly to the <div id="header"></div> element! */
-    background-image: url(/assets/images/ptgb_logo_transparent.png);
+    background-image: url(/assets/images/logo.svg);
     background-size: 100%;
     background-position: center;
     background-size: contain;
@@ -241,9 +241,9 @@ strong {
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
     #container {
-        width: 640px;
+        width: 1000px;
         flex-wrap: wrap;
     }
     #flex-container {

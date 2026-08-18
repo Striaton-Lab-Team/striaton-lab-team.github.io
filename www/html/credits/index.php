@@ -38,12 +38,122 @@
                         <li><a href="https://bsky.app/profile/itsminra.live">Minra Starlight</a></li>
                     </ul>
 
+                    Translators:
+                    <ul>
+                        Italian:
+                        <ul>
+                            <li>D 'Lagger' Garlini</li>
+                            <li>A. Chieffi</li>
+                        </ul>
+                        Spanish Latin American:
+                        <ul>
+                            <li>Christóbal</li>
+                        </ul>
+                        Portuguese Brazillian:
+                        <ul>
+                            <li>Hyd</li>
+                        </ul>
+                    </ul>
+
+                    <h1>Other contributions</h1>
+
+                    Development asssitance:
+                    <ul>
+                        <li><a href="https://www.youtube.com/c/imablisy">im a blisy</a></li>
+                        <li><a href="https://www.youtube.com/channel/UC6W8N0NbBqSvaV446atf35A">rileyk64</a></li>
+                        <li>Shao</li>
+                    </ul>
+
+                    
+
+                    Inspired by the works of:
+                    <ul>
+                        <li><a href="https://www.youtube.com/@Goppier">Goppier</a></li>
+                        <li><a href="https://www.youtube.com/@Lorenzooone">Lorenzooone</a></li>
+                        <li><a href="https://www.youtube.com/c/imablisy">im a blisy</a></li>
+                        <li><a href="https://www.youtube.com/@RETIREglitch">RETIRE</a></li>
+                    </ul>
+
+                    Programs used:
+                    <ul>
+                        <li><a href="https://github.com/haven1433/HexManiacAdvance">Hex Maniac Advance</a></li>
+                        <li><a href="https://github.com/kwsch/PKHeX">PKHeX</a></li>
+                        <li><a href="https://github.com/projectpokemon/Gen3-WCTool">WC3Tool</a></li>
+                        <li><a href="https://www.coranac.com/projects/usenti/">Usenti</a></li>
+                        <li><a href="https://github.com/Admiral-Fish/PokeFinder">PokéFinder</a></li>
+                        <li><a href="https://www.hackromtools.info/sappy-mid2agb/">Sappy + Mid2AGB</a></li>
+                    </ul>
+
+                    Open source code and libraries:
+                    <ul>
+                        <li><a href="https://devkitpro.org/">DevkitPro</a></li>
+                        <li><a href="https://github.com/devkitPro/libtonc">libtonc</a></li>
+                        <li><a href="https://github.com/Lorenzooone/Pokemon-Gen3-to-Gen-X">Pokemon Gen3 to GenX</a></li>
+                        <li><a href="https://github.com/rodri042/gba-link-connection">gba-link-connection</a></li>
+                        <li><a href="https://github.com/gbadev-org/awesome-gbadev">awesomegbadev</a></li>
+                        <li><a href="https://github.com/stevenchaulk/arduino-poke-gen2">arduino-poke-gen2</a></li>
+                    </ul>
+
+                    Research resources:
+                    <ul>
+                        <li><a href="https://github.com/LunarLambda/arm-docs">ARM Documentation for Nintendo Homebrew</a></li>
+                        <li><a href="https://github.com/Lorenzooone/Pokemon-Gen3-to-Gen-X">Pokemon Gen 3 to Gen X</a></li>
+                        <li><a href="https://www.smogon.com/ingame/rng/">Smogon's Practical Guides to RNG Abuse</a></li>
+                    </ul>
+
+                    ROM Data:
+                    <ul>
+                        <li><a href="https://github.com/pret/pokeruby">PokeRuby</a></li>
+                        <li><a href="https://github.com/pret/pokefirered">PokeFireRed</a></li>
+                        <li><a href="https://github.com/pret/pokeemerald">PokeEmerald</a></li>
+                        <li><a href="https://github.com/pret/pokered">PokeRed</a></li>
+                        <li><a href="https://github.com/pret/pokeyellow">PokeYellow</a></li>
+                        <li><a href="https://github.com/pret/pokegold">PokeGold</a></li>
+                        <li><a href="https://github.com/pret/pokecrystal">PokeCrystal</a></li>                     
+                    </ul>
+
+                    Pokémon Data:
+                    <ul>
+                        <li><a href="https://bulbapedia.bulbagarden.net/wiki/Main_Page">Bulbapedia</a></li>
+                        <li><a href="https://www.serebii.net/">Serebii</a></li>
+                        <li><a href="https://pokeapi.co/">PokéAPI</a></li>
+                        <li><a href="https://glitchcity.wiki/wiki/Main_Page">Glitch City Wiki</a></li>                    
+                    </ul>
+
+                    Discord Community Assitance:
+                    <ul>
+                        <li><a href="https://discord.com/invite/x9eQuBg">Hex Maniac Advance Development</a></li>
+                        <li><a href="https://discord.gg/ctGSNxRkg2">GBAdev</a></li>
+                        <li><a href="https://discordapp.com/invite/vdTW48Q">PRET</a></li>
+                        <li><a href="https://discord.com/invite/EA7jxJ6">Glitch City Research Institute</a></li>                    
+                    </ul>
+
+                    Gen II Icon Sprite Artists
+                    <ul>
+                        <li><a href="https://x.com/LuigiTKO">LuigiTKO</a></li>
+                        <li><a href="https://x.com/guiabel/">GuiAbel</a></li>
+                        <li><a href="https://github.com/SoupPotato">SourApple</a></li>
+                    </ul>
+
+                    Arbitrary Code Execution Assistance:
+                    <ul>
+                        <li><a href="https://x.com/mrcheeze_">MrCheeze</a></li>
+                    </ul>
+
                     Webmaster: 
                     <ul>
                         <li><a href="https://bsky.app/profile/aestellic.dev">aestellic</a></li>
                     </ul>
                     Layout from
                     <a href="https://codepen.io/sadness97/full/XJbLxNj">Sadgrl</a>'s layout generator
+
+                    <h1>Special Mentions</h1>
+                    A huge thank you to:
+                    <ul>
+                        <li>Goppier, for being the first one to bridge the gap between generation 2 and generation 3 and for providing extremely useful documentation about both versions of the Link Cable</li>
+                        <li>Lorenzooone for being the direct inspiration for this project, as well as answering questions I had during development.</li>
+                    </ul>
+                    This project would never have happened without either of them, and we cannot thank them enough! <3
                 </main>
                 <?php require '../base/rightSidebar.php';?>
             </div>
