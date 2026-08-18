@@ -42,6 +42,9 @@
                     <img src="/assets/images/screenshots/4.png" alt="game select" width="240" height="160">
                     <img src="/assets/images/screenshots/5.png" alt="box" width="240" height="160">
 
+                    <h1>video</h1>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/47A6p2hH2gU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
                     <h1>buttons</h1>
                     <a href="https://bluemoonfalls.com" target="_blank"><img src="/assets/images/buttons/blue_moon_falls.png" alt="blue moon falls" width="88" height="31"></a>
                     <a href="https://www.dragonflycave.com" target="_blank"><img src="/assets/images/buttons/the_cave_of_dragonflies.gif" alt="the cave of dragonflies" width="88" height="31"></a>
