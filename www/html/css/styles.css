@@ -1,0 +1,278 @@
+@import url("fonts.css");
+@import url("colors.css");
+
+* {
+  box-sizing:border-box; /* avoids issues with padding; see https://codepen.io/sadness97/pen/zYPbbYE */
+}
+
+body {
+  color: var(--text);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#bg {
+  background-image: url(/assets/images/background.png);
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  animation: scroll-anim 10s linear infinite;
+}
+
+@keyframes scroll-anim {
+	100% {
+		background-position: -512px -512px;
+	}
+}
+
+.rainbow-text {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: animatedBackground 1s linear infinite;
+    -moz-animation: animatedBackground 1s linear infinite;
+    -webkit-animation: animatedBackground 1s linear infinite;
+    -ms-animation: animatedBackground 1s linear infinite;
+    -o-animation: animatedBackground 1s linear infinite;
+}
+
+#font-select {
+  background-color: var(--accent-dark);
+  border: 1px solid var(--accent);
+  padding: 10px;
+}
+
+.underlined {
+    text-decoration-line: underline;
+}
+
+.bold {
+    text-decoration-thickness: 100%;
+}
+
+p + ul { /* removes line break between <p> and <ul> tags */
+    margin-top: 0px;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+/* layout based on https://codepen.io/sadness97/full/XJbLxNj */
+
+/* the "container" is what wraps your entire website */
+/* if you want something (like the header) to be Wider than
+   the other elements, you will need to move that div outside
+   of the container */
+#container {
+    max-width: 1000px;
+    /* this is the width of your layout! */
+    /* if you change the above value, scroll to the bottom
+        and change the media query according to the comment! */
+    margin: 0 auto;
+    /* this centers the entire page */
+}
+
+/* the area below is for all links on your page
+   EXCEPT for the navigation */
+#container a {
+    color: var(--text);
+    font-weight: bold;
+    /* if you want to remove the underline
+       you can add a line below here that says:
+       text-decoration:none; */
+}
+
+#header {
+    width: 100%;
+    height: 200px;
+    background-color: var(--background);
+    /* this is only for a background image! */
+    /* if you want to put images IN the header, 
+       you can add them directly to the <div id="header"></div> element! */
+    background-image: url(/assets/images/ptgb_logo_transparent.png);
+    background-size: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    image-rendering: crisp-edges;
+}
+
+/* navigation section */
+#navbar {
+  height: 40px;
+  background-color: var(--accent-dark);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+    /* Couldn't get nested flex to center the links vertically, so using manual positioning instead */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* navigation links*/
+#navbar li a {
+    color: var(--text);
+    font-weight: 800;
+    text-decoration: none;
+    /* this removes the underline */
+}
+
+/* navigation link when a link is hovered over */
+#navbar li a:hover {
+    color: #a49cba;
+    text-decoration: underline;
+}
+
+#flex {
+    display: flex;
+}
+
+/* this colors the sidebar */
+aside {
+    background-color: var(--background);
+    width: 220px;
+    padding: 20px;
+    font-size: smaller;
+    /* this makes the sidebar text slightly smaller */
+}
+
+
+/* this is the color of the main content area,
+   to the left of the sidebar! */
+main {
+    background-color: var(--background);
+    flex: 1;
+    padding: 20px;
+    order: 2;
+}
+
+/* what's this "order" stuff about??
+   allow me to explain!
+   if you're using both sidebars, the "order" value
+   tells the CSS the order in which to display them.
+   left sidebar is 1, content is 2, and right sidebar is 3! */
+
+#rightSidebar {
+    order: 3;
+    margin-left: 10px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+strong {
+    /* this styles bold text */
+    color: var(--text);
+}
+
+/* this is just a cool box, it's the darker colored one */
+.box {
+    background-color: var(--accent-dark);
+    border: 1px solid var(--accent);
+    padding: 10px;
+}
+
+/* CSS for extras */
+
+#topBar {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: smaller;
+    background-color: var(--accent-dark);
+    align-content: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    /* the order of the items is adjusted here for responsiveness!
+       since the sidebars would be too small on a mobile device.
+       feel free to play around with the order! */
+    main {
+        order: 1;
+    }
+
+    #rightSidebar {
+        order: 3;
+        margin-left: 0;
+    }
+
+    #navbar {
+        margin-bottom: 0;
+        ul {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #container {
+        width: 640px;
+        flex-wrap: wrap;
+    }
+    #flex-container {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+    #column1 {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+    #column2 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    #no-margin-top {
+        margin-top: 0px;
+    }
+    #foxPFP {
+        width: 175px;
+        height: 175px; 
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

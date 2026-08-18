@@ -1,0 +1,70 @@
+services:
+  nginx:
+    build: ./nginx/
+    container_name: nginx2
+    ports:
+      - '91:80'
+    restart: unless-stopped
+    links:
+      - php
+    volumes_from:
+      - app-data
+    networks:
+      - proxy
+      - website2
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=proxy"
+      - "traefik.http.routers.website2.rule=Host(`www.ptgb.aestellic.dev`) || Host(`ptgb.aestellic.dev`)"
+      - "traefik.http.routers.website2.entrypoints=https"
+      - "traefik.http.routers.website2.tls.certresolver=cloudflare"
+      - "traefik.http.routers.website2.middlewares=secure-headers@file"
+
+  php:
+    build: ./php/
+    container_name: php-container2
+    expose:
+      - 9000
+    links:
+      - mysql
+    volumes_from:
+      - app-data
+    networks:
+      - website2
+  app-data:
+    image: 'php:7.0-fpm'
+    container_name: app-data-container2
+    volumes:
+      - './www/html/:/var/www/html/'
+    command: 'true'
+    networks:
+      - website2
+  mysql:
+    image: 'mysql:5.7'
+    container_name: mysql-container2
+    volumes_from:
+      - mysql-data
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    networks:
+      - website2
+  mysql-data:
+    image: 'mysql:5.7'
+    container_name: mysql-data-container2
+    volumes:
+      - db_data2:/var/lib/mysql
+    command: 'true'
+    networks:
+      - website2
+
+networks:
+  proxy:
+    external: true
+  website2:
+    external: false
+
+volumes:
+  db_data2: {}
