@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>
+      {%- if page and page.title -%}
+        {{ page.title }}
+      {%- elif section and section.title -%}
+        {{ section.title }}
+      {%- endif -%}
+    </title>
+  </head>
+  <body>
+    <div id="bg"></div>
+    <div id="container">
+      {% include "partials/header.html" %}
+      <div id="flex">
+        <main>
+          {% block content %} {% endblock content %}
+        </main>
+        {% include "partials/rightSidebar.html" %}
+      </div>
+    </div>
+    <script src="/js/fontSelector.js"></script>
+  </body>
+</html>

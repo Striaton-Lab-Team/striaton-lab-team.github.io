@@ -1,1 +1,0 @@
-<script src="/js/fontSelector.js"></script>
